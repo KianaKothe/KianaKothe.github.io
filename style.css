@@ -1,0 +1,154 @@
+body, footer {background-color:seashell; font-family: serif;}
+ul {list-style-type: none;}
+nav ul li {
+    display: inline; justify-content: center;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+/* Responsive navigation */
+@media only screen and (max-width: 600px) {
+  .topnav a {
+      display: none;
+  }
+  .topnav a.icon {
+      float: right;
+      display: block;
+  }
+  .topnav.responsive {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1;
+  }
+  .topnav.responsive a.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+  }
+  .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: right;
+  }
+}
+
+
+h1 {color:rgb(27, 165, 158); font-family:serif; text-align: center}
+h2 {color:teal; font-family: serif; text-transform: uppercase;}
+    #about {padding:20px}
+    .about_title {text-align: center;}
+    accomplishments {text-align: center;}
+h3 {color:lightseagreen; font-family: serif; font-weight: bold; text-align: center; margin-bottom: 2px;}
+h4 {border: none; color: darkcyan; font-family: Serif; margin:10px 10px 10px 10px}
+
+
+
+
+
+.carousel-container {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
+}
+
+.card {
+    flex: 1 0 100%;
+    box-sizing: border-box;
+    display: none; /* Hide all cards initially */
+}
+
+.card.active {
+    display: block; /* Show the active card */
+}
+
+button.prev, button.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+button.prev {
+    left: 10px;
+}
+
+button.next {
+    right: 10px;
+}
+
+
+
+
+
+
+
+
+
+#accomplishments-section {text-align: center;}
+table {color:darkcyan; font-family: Serif; font-weight: bold; margin-left: auto; margin-right: auto;}
+.table_accomplishments th {color:darkcyan; font-family: Serif; font-weight: bold; text-align: center;}
+
+p{font-size: 14;}
+li, td, footer {font-size:  12px;}
+
+
+
+.image_position{text-align: center}
+.image{height: 300px; width: 300px; border-radius: 100%;}
+
+#about {
+    padding: 20px;
+}
+
+.about_title {
+    text-align: center;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 16px;
+    width: 30%;
+    box-sizing: border-box;
+    text-align: left;
+}
+
+.card h4 {
+    margin-top: 0;
+}
+
+.card ul {
+    padding-left: 20px;
+}
+ 
+
+
+
+#contactsection {background-color: rgb(227, 247, 247);}
+table, th, td {border:2px  solid rgb(100, 160, 155); border-collapse: collapse; padding: 10px; margin:10px 25px 10px 25px}
+
+

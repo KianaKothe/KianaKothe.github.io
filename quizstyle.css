@@ -1,0 +1,37 @@
+body{
+	font-size: 20px;
+	font-family: serif;
+    background-color: seashell;
+}
+
+h1{color:rgb(27, 165, 158); font-family:serif; text-align: center}
+h3{color:rgb(61, 75, 71); font-family:serif; font-size: 20px}
+
+
+
+
+.question{
+	font-weight: 600;
+    color: teal
+}
+.answers {
+    margin-bottom: 20px;
+    color: rgb(61, 75, 71);
+}
+.answers label{
+    display: block;
+  }
+#submit{
+	font-family: serif;
+	font-size: 20px;
+	background-color: #297;
+	color: #fff;
+	border: 0px;
+	border-radius: 3px;
+	padding: 20px;
+	cursor: pointer;
+	margin-bottom: 20px;
+}
+#submit:hover{
+	background-color: #3a8;
+}

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <title>Kiana Kothe's Portfolio</title>
+        <link href="./style.css" type="text/css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+        <meta name="viewport" content="width=device-width, user-scalable=no">
+    </head> 
+    <body>
+        <!--relative links to the rest of the page -->
+        <main>
+            <header>
+                <nav>
+                    <nav class="topnav" id="portfolioTopnav">
+                        <a href="#about">About</a>
+                        <a href="#skills">Skills</a>
+                        <a href="#accomplishments">Accomplishments</a>
+                        <a href="#contact">Contact</a>
+                    <a href="javascript:void(0);" class="icon" onclick="openMenu()"><i class="fa fa-bars"></i></a>
+                </nav>    
+            </header>
+            <header>
+                <h1>Kiana Kothe</h1>
+            </header>
+                <!--this is about me with a link to my Orcid when pressing on the picture-->
+                <div id="about">
+                    <figure class="image_position">
+                        <a href="https://orcid.org/my-orcid?orcid=0009-0002-2160-5060" target="blank">
+                        <img class="image" src="Picture.jpg" alt="A picture of me" width="501" height="536"/> </a>
+                        <!--<figcaption>Me</figcaption> -->
+                    </figure>
+                    <h2 class="about_title"> About</h2>
+                        <p>I am very passionate about <strong>neuropsychological research</strong>. My ambition is to apply (novel) <strong>neuroimaging methods</strong> to improve <strong>diagnostics</strong> and develop possible <strong>interventions</strong> for neurocognitive disorders. My research-oriented academic background spans six years in an international setting, during which I have gained significant experience working with participants and patients. My research interests are diverse, and I have previously worked in research on frontotemporal dementia and cross-cultural psychological phenomena.  Currently, I am pursuing a PhD focused on <strong>neuroimmunology</strong> in the context of <strong>Myalgic Encephalomyelitis/Chronic Fatigue Syndrome</strong> . More specifically, I aim to image glial cells and neuroinflammatory mechanisms in the brains of patients with ME/CFS and healthy controls and linking these to peripheral immune responses. I am passionate about helping people affected by invisible disease find a way to be taken seriously and seen. I believe that one of the major strengths of research lies in <strong>collaboration and knowledge sharing</strong> within the research community and with the general public. </p>
+                </div>
+
+        
+
+                <div id="skills"> 
+                    <section id="skills-section">
+                        <h3 onclick="openCarousel()">Skills</h3>
+                            <div class="carousel-container">
+                                <div class = "carousel" id = "carousel">   
+                                    <div class="card">
+                                    <h4> Research Skills</h4>
+                                        <li>MRI Metodology, including MRS, dwMRI, rsMRI</li>
+                                        <li>Quantitative Data Analysis</li>
+                                        <li>Participant Recruitment</li>
+                                        <li>Neuropsychological Assessment</li>
+                                    </div>
+                                    <div class="card">
+                                        <h4>Interpersonal Skills</h4> 
+                                        <ul>
+                                            <li>Teamwork</li>
+                                            <li>Problem-Solving</li>
+                                            <li>Communication</li>
+                                        </ul>
+                                    </div>
+                                    <div class="card">
+                                        <h4>Technical Skills</h4>
+                                        <ul>
+                                            <li>Python</li>
+                                            <li>R</li>
+                                            <li>SPSS</li>
+                                        </ul>
+                                    </div> 
+                        <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+                        <button class="next" onclick="moveSlide(1)">&#10095;</button>
+                                </div>
+                            </div>
+                    </section>
+                </div>
+            
+                <!-- major accomplishments, what are they lol?--> 
+                    <div id="accomplishments">
+                    <section id="accomplishments-section">
+                        <h2>Accomplishments</h2>
+                            <table>
+                                <tr class="table_accomplishments">
+                                    <th scope="col">Publications &nbsp;</th>
+                                    <th scope="col">Awards &nbsp;</th>
+                                    <th scope="col">Presentations&nbsp;</th>
+                                </tr>
+                                <tr> 
+                                    <td>Content 1</td>  
+                                    <td>Content 2</td> 
+                                    <td>Content 3</td>
+                                </tr>
+                            </table>
+                            <h3>Coding Examples</h3>
+                                <a href="quiz.html" target="_blank">Take the Portfolio Quiz!</a>
+                    </section> 
+                    </div>
+            </main>
+            <footer id="contactsection">
+                <!-- how to hunt me down-->
+                    <div id="contact">
+                    <h2 id="contactsection">Contact</h2>
+                        <a href="https://www.linkedin.com/in/kiana-kothe/" target="blank">LinkedIn</a>
+                        <form>
+                            <label for="name">*Name:</label> <br>
+                            <input type="text" id="name" name="name" required> <br> <br>
+                            <label for="email">*Email</label> <br>
+                            <input type="email" id="email" name="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"><br><br>
+                            <label for="mobile">Mobile (optional)</label> <br>
+                            <input type="tel" id="mobile" name="mobile" pattern="0-9] {10,16}"> <br> <br>
+                            <label for="message">*Leave your message below:</label> <br>
+                            <textarea id="message" name="message" rows="5" cols="30" required></textarea> <br> <br>
+                            <input type="submit">
+                            </form>
+                    </div>
+                    
+            </footer>
+            <script src="nav.js"></script>
+    </body>
+</html>
